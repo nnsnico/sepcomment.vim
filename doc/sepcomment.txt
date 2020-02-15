@@ -1,0 +1,58 @@
+*sepcomment*	Create a separated comment contains words
+
+Version:	0.0.1
+Author:		nnsnico <yuji.jampan.blue@gmail.com>
+License: MIT license
+
+==============================================================================
+CONTENTS						*sepcomment-contents*
+
+1. INTRODUCTION		|sepcomment-introduction|
+2. USAGE		|sepcomment-usage|
+3. INTERFACE		|sepcomment-interface|
+  COMMANDS		  |sepcomment-commands|
+  VARIABLES		  |sepcomment-variables|
+==============================================================================
+INTRODUCTION					*sepcomment-introduction*
+
+*sepcomment.vim* is a separated comment maker contains words. Internal words
+aligned center. Example, You can create a comment like:
+
+----------------------------------- foo bar ----------------------------------
+
+==============================================================================
+USAGE							*sepcomment-usage*
+
+Refer to |sepcomment-commands|
+
+==============================================================================
+INTERFACE						*sepcomment-interface*
+
+
+------------------------------------------------------------------------------
+COMMANDS						*sepcomment-commands*
+
+
+:SepComment {text}					*:SepComment*
+	Make a separated comment in {text} words
+
+------------------------------------------------------------------------------
+VARIABLES						*sepcomment-variables*
+
+g:sepcomment#margin					*g:sepcomment#margin*
+	Default: 1
+	The margin space of both ends words
+
+g:sepcomment#length					*g:sepcomment#length*
+	Default: 80
+	The length of characters of a line
+
+g:sepcomment#decoration				 *g:sepcomment#decoration*
+	Default: '-'
+	The Decotive characters to separate. If you set it to one or more 
+	characters, decoration is be more beautiful like below
+
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Example -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+==============================================================================
+vim:set tw=78 ts=8 sw=8 sts=8 noexpandtab ft=help norl :
