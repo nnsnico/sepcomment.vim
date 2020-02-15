@@ -2,6 +2,17 @@
 
 Beautiful comment create plugin
 
+## Installation
+
+Add using the plugin manager
+
+### dein.vim
+
+```
+[[plugins]]
+repo = 'nnsnico/sepcomment.vim'
+```
+
 ## Usage
 
 Specifying words on command argument:
