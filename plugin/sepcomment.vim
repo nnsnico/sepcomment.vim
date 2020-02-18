@@ -2,16 +2,15 @@
 " Author: nnsnico <yuji.jampan.blue@gmail.com>
 " License: MIT
 
-let s:save_cpo = &cpo
-set cpo&vim
-
 scriptencoding utf-8 
 
-if exists('g:loaded_sepcomment') || has('nvim')
+if exists('g:loaded_sepcomment')
     finish
 endif
-
 let g:loaded_sepcomment = 1
+
+let s:save_cpo = &cpo
+set cpo&vim
 
 command! -range -nargs=* SepComment call sepcomment#sepcomment(<line1>, <f-args>)
 

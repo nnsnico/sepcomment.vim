@@ -5,9 +5,15 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-let g:sepcomment#margin = 1
-let g:sepcomment#length = 80
-let g:sepcomment#decoration = '-'
+if !exists('g:sepcomment#margin')
+    let g:sepcomment#margin = 1
+endif
+if !exists('g:sepcomment#length')
+    let g:sepcomment#length = 80
+endif
+if !exists('g:sepcomment#decoration')
+    let g:sepcomment#decoration = '-'
+endif
 
 " separated comment
 function! sepcomment#sepcomment(line1, ...) abort
