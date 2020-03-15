@@ -2,7 +2,7 @@
 " Author: nnsnico <yuji.jampan.blue@gmail.com>
 " License: MIT
 
-scriptencoding utf-8 
+scriptencoding utf-8
 
 if exists('g:loaded_sepcomment')
     finish
