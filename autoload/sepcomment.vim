@@ -28,9 +28,6 @@ function! sepcomment#sepcomment(line1, ...) abort
     call setline('.', result)
 endfunction
 
-let &cpo = s:save_cpo
-unlet s:save_cpo
-
 function! s:get_selected_words(line) abort
     let regname = '"'
     let reg = getreg(regname)
@@ -56,5 +53,8 @@ function! s:get_separated_comment(line, margin, decoration, length) abort
 
     return result
 endfunction
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
 
 " vim:set ts=4 sw=4 sts=4 et :
